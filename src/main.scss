@@ -1,0 +1,56 @@
+@import "~css-wipe";
+
+/* ベース */
+body {
+  font-family: sans-serif;
+}
+
+/* レイアウト */
+
+.ly_cont {
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  .bl_media {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.5;
+
+    .bl_media_imageWrapper {
+      flex: 1 1 25%;
+      margin-left: 3.33333%;
+
+      > img {
+        width: 100%;
+        vertical-align: top;
+      }
+    }
+
+    .bl_media_body {
+      margin-left: 20px;
+      flex: 1 1 68.333333%;
+
+      .bl_media_title {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      > span {
+        color: #555;
+        font-size: 14px;
+      }
+
+      .subTitle {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        border-bottom: 1px solid #555;
+      }
+    }
+  }
+}
